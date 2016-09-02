@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C08918E63962F95DC256CD2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070F7461BBB514CE75D23FD1 /* Pods.framework */; };
+		B00858E61CDC6E6E00273FBC /* YBStationSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00858E51CDC6E6E00273FBC /* YBStationSectionHeaderView.swift */; };
+		B00858E81CDC6E7800273FBC /* YBStationSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00858E71CDC6E7800273FBC /* YBStationSectionHeaderView.xib */; };
+		B00858F01CDC74C700273FBC /* YBCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00858EF1CDC74C700273FBC /* YBCommentModel.swift */; };
+		B00858F21CDC756B00273FBC /* YBCommentModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00858F11CDC756B00273FBC /* YBCommentModelHelper.swift */; };
+		B00858F51CDC7A1600273FBC /* YBCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00858F31CDC7A1600273FBC /* YBCommentTableViewCell.swift */; };
+		B00858F61CDC7A1600273FBC /* YBCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00858F41CDC7A1600273FBC /* YBCommentTableViewCell.xib */; };
+		B01EDC5E1CCEF335002D02E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC5D1CCEF335002D02E2 /* AppDelegate.swift */; };
+		B01EDC631CCEF335002D02E2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01EDC611CCEF335002D02E2 /* Main_iPhone.storyboard */; };
+		B01EDC651CCEF335002D02E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01EDC641CCEF335002D02E2 /* Assets.xcassets */; };
+		B01EDC681CCEF335002D02E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01EDC661CCEF335002D02E2 /* LaunchScreen.storyboard */; };
+		B01EDC801CCEF427002D02E2 /* YBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC721CCEF427002D02E2 /* YBNavigationController.swift */; };
+		B01EDC811CCEF427002D02E2 /* JSONParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC741CCEF427002D02E2 /* JSONParsable.swift */; };
+		B01EDC831CCEF427002D02E2 /* YBStationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC781CCEF427002D02E2 /* YBStationListTableViewController.swift */; };
+		B01EDC841CCEF427002D02E2 /* YBStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC791CCEF427002D02E2 /* YBStationModel.swift */; };
+		B01EDC851CCEF427002D02E2 /* YBStationModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC7A1CCEF427002D02E2 /* YBStationModelHelper.swift */; };
+		B01EDC861CCEF427002D02E2 /* YBStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC7B1CCEF427002D02E2 /* YBStationTableViewCell.swift */; };
+		B01EDC871CCEF427002D02E2 /* YBStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01EDC7C1CCEF427002D02E2 /* YBStationTableViewCell.xib */; };
+		B01EDC881CCEF427002D02E2 /* YBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC7E1CCEF427002D02E2 /* YBColor.swift */; };
+		B01EDC891CCEF427002D02E2 /* YBJSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC7F1CCEF427002D02E2 /* YBJSONHelper.swift */; };
+		B01EDC8C1CCEF908002D02E2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B01EDC8E1CCEF908002D02E2 /* Localizable.strings */; };
+		B01EDC941CCF3680002D02E2 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC921CCF3680002D02E2 /* BaseTableViewController.swift */; };
+		B01EDC951CCF3680002D02E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC931CCF3680002D02E2 /* BaseViewController.swift */; };
+		B01EDC971CCF369D002D02E2 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC961CCF369D002D02E2 /* BaseNavigationController.swift */; };
+		B01EDC9D1CCF3883002D02E2 /* YBStationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC9C1CCF3883002D02E2 /* YBStationMapViewController.swift */; };
+		B01EDC9F1CCF38FB002D02E2 /* YBStationAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDC9E1CCF38FB002D02E2 /* YBStationAnnotationView.swift */; };
+		B01EDCA11CCF39B8002D02E2 /* YBStationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDCA01CCF39B8002D02E2 /* YBStationAnnotation.swift */; };
+		B01EDCA51CCF4B2F002D02E2 /* YBLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDCA41CCF4B2F002D02E2 /* YBLocationManager.swift */; };
+		B01EDCA71CCF4EA9002D02E2 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01EDCA61CCF4EA9002D02E2 /* BaseManager.swift */; };
+		B02EAB6F1CD3558B003D0131 /* YBLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EAB6E1CD3558B003D0131 /* YBLogInViewController.swift */; };
+		B02EAB711CD35882003D0131 /* YBGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EAB701CD35882003D0131 /* YBGlobal.swift */; };
+		B03F3B841CD7029200326F73 /* YBUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3B831CD7029200326F73 /* YBUserManager.swift */; };
+		B03F3B871CD714BC00326F73 /* YBFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3B861CD714BC00326F73 /* YBFacebook.swift */; };
+		B03F3B891CD714DB00326F73 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3B881CD714DB00326F73 /* Facebook.swift */; };
+		B03F3B8B1CD720E300326F73 /* YBUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3B8A1CD720E300326F73 /* YBUserModel.swift */; };
+		B03F3B8D1CD7216D00326F73 /* YBUserModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3B8C1CD7216D00326F73 /* YBUserModelHelper.swift */; };
+		B03F3B901CD725BB00326F73 /* NSUserDefaultsParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3B8F1CD725BB00326F73 /* NSUserDefaultsParsable.swift */; };
+		B03F3BB01CD7418C00326F73 /* RHManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3BAF1CD7418C00326F73 /* RHManager.swift */; };
+		B03F3BB21CD741E200326F73 /* YBAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F3BB11CD741E200326F73 /* YBAppManager.swift */; };
+		B05356841CD84F1900D31793 /* YBStationViewModeSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05356831CD84F1900D31793 /* YBStationViewModeSwitcherView.swift */; };
+		B05356CA1CDB220600D31793 /* YBStationListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05356C91CDB220600D31793 /* YBStationListCollectionViewController.swift */; };
+		B05356CC1CDB224800D31793 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05356CB1CDB224800D31793 /* BaseCollectionViewController.swift */; };
+		B05356D31CDB2D9B00D31793 /* YBStationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05356D11CDB2D9B00D31793 /* YBStationCollectionViewCell.swift */; };
+		B05356D41CDB2D9B00D31793 /* YBStationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05356D21CDB2D9B00D31793 /* YBStationCollectionViewCell.xib */; };
+		B05356D61CDB396200D31793 /* YBStationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05356D51CDB396200D31793 /* YBStationListViewController.swift */; };
+		B0B04ABC1CEC16150006C5F3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B04ABE1CEC16150006C5F3 /* Main_iPad.storyboard */; };
+		B0B04AC51CEC17F10006C5F3 /* BaseSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B04AC41CEC17F10006C5F3 /* BaseSplitViewController.swift */; };
+		B0B04AC71CEC18A90006C5F3 /* YBSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B04AC61CEC18A90006C5F3 /* YBSplitViewController.swift */; };
+		B0BD4FB61CE2D02B00B77EB5 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BD4FB51CE2D02B00B77EB5 /* BaseTabBarController.swift */; };
+		B0F46EF21CD041C800F29FD5 /* YBStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F46EF11CD041C800F29FD5 /* YBStationTableViewController.swift */; };
+		B0F46EF51CD0475200F29FD5 /* YBStationMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F46EF31CD0475200F29FD5 /* YBStationMapTableViewCell.swift */; };
+		B0F46EF61CD0475300F29FD5 /* YBStationMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F46EF41CD0475200F29FD5 /* YBStationMapTableViewCell.xib */; };
+		B0F6C86E1CD05FBF008C8A5B /* YBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6C86D1CD05FBF008C8A5B /* YBRouter.swift */; };
+		B0F6C8701CD0628F008C8A5B /* YBStationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6C86F1CD0628F008C8A5B /* YBStationManager.swift */; };
+		B0F6C89B1CD1D3B6008C8A5B /* YBTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6C89A1CD1D3B6008C8A5B /* YBTabBarController.swift */; };
+		B0F6C89E1CD1DA08008C8A5B /* YBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6C89D1CD1DA08008C8A5B /* YBProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DA20C6D52B2937B2BA8333 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		070F7461BBB514CE75D23FD1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF31640BA2EE91A4774BEFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B00858E51CDC6E6E00273FBC /* YBStationSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationSectionHeaderView.swift; sourceTree = "<group>"; };
+		B00858E71CDC6E7800273FBC /* YBStationSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBStationSectionHeaderView.xib; sourceTree = "<group>"; };
+		B00858EF1CDC74C700273FBC /* YBCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBCommentModel.swift; sourceTree = "<group>"; };
+		B00858F11CDC756B00273FBC /* YBCommentModelHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBCommentModelHelper.swift; sourceTree = "<group>"; };
+		B00858F31CDC7A1600273FBC /* YBCommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBCommentTableViewCell.swift; sourceTree = "<group>"; };
+		B00858F41CDC7A1600273FBC /* YBCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBCommentTableViewCell.xib; sourceTree = "<group>"; };
+		B01EDC5A1CCEF335002D02E2 /* YouBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01EDC5D1CCEF335002D02E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B01EDC621CCEF335002D02E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B01EDC641CCEF335002D02E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B01EDC671CCEF335002D02E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B01EDC691CCEF335002D02E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01EDC6F1CCEF41A002D02E2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
+		B01EDC701CCEF41A002D02E2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B01EDC721CCEF427002D02E2 /* YBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBNavigationController.swift; sourceTree = "<group>"; };
+		B01EDC741CCEF427002D02E2 /* JSONParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsable.swift; sourceTree = "<group>"; };
+		B01EDC781CCEF427002D02E2 /* YBStationListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationListTableViewController.swift; sourceTree = "<group>"; };
+		B01EDC791CCEF427002D02E2 /* YBStationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationModel.swift; sourceTree = "<group>"; };
+		B01EDC7A1CCEF427002D02E2 /* YBStationModelHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationModelHelper.swift; sourceTree = "<group>"; };
+		B01EDC7B1CCEF427002D02E2 /* YBStationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationTableViewCell.swift; sourceTree = "<group>"; };
+		B01EDC7C1CCEF427002D02E2 /* YBStationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBStationTableViewCell.xib; sourceTree = "<group>"; };
+		B01EDC7E1CCEF427002D02E2 /* YBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBColor.swift; sourceTree = "<group>"; };
+		B01EDC7F1CCEF427002D02E2 /* YBJSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBJSONHelper.swift; sourceTree = "<group>"; };
+		B01EDC8D1CCEF908002D02E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B01EDC8F1CCEF90A002D02E2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B01EDC921CCF3680002D02E2 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		B01EDC931CCF3680002D02E2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B01EDC961CCF369D002D02E2 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		B01EDC9C1CCF3883002D02E2 /* YBStationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationMapViewController.swift; sourceTree = "<group>"; };
+		B01EDC9E1CCF38FB002D02E2 /* YBStationAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationAnnotationView.swift; sourceTree = "<group>"; };
+		B01EDCA01CCF39B8002D02E2 /* YBStationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationAnnotation.swift; sourceTree = "<group>"; };
+		B01EDCA41CCF4B2F002D02E2 /* YBLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBLocationManager.swift; sourceTree = "<group>"; };
+		B01EDCA61CCF4EA9002D02E2 /* BaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		B02EAB6E1CD3558B003D0131 /* YBLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBLogInViewController.swift; sourceTree = "<group>"; };
+		B02EAB701CD35882003D0131 /* YBGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBGlobal.swift; sourceTree = "<group>"; };
+		B03F3B831CD7029200326F73 /* YBUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBUserManager.swift; sourceTree = "<group>"; };
+		B03F3B861CD714BC00326F73 /* YBFacebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBFacebook.swift; sourceTree = "<group>"; };
+		B03F3B881CD714DB00326F73 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
+		B03F3B8A1CD720E300326F73 /* YBUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBUserModel.swift; sourceTree = "<group>"; };
+		B03F3B8C1CD7216D00326F73 /* YBUserModelHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBUserModelHelper.swift; sourceTree = "<group>"; };
+		B03F3B8F1CD725BB00326F73 /* NSUserDefaultsParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsParsable.swift; sourceTree = "<group>"; };
+		B03F3BAF1CD7418C00326F73 /* RHManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHManager.swift; sourceTree = "<group>"; };
+		B03F3BB11CD741E200326F73 /* YBAppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBAppManager.swift; sourceTree = "<group>"; };
+		B05356831CD84F1900D31793 /* YBStationViewModeSwitcherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationViewModeSwitcherView.swift; sourceTree = "<group>"; };
+		B05356C91CDB220600D31793 /* YBStationListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationListCollectionViewController.swift; sourceTree = "<group>"; };
+		B05356CB1CDB224800D31793 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		B05356D11CDB2D9B00D31793 /* YBStationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationCollectionViewCell.swift; sourceTree = "<group>"; };
+		B05356D21CDB2D9B00D31793 /* YBStationCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBStationCollectionViewCell.xib; sourceTree = "<group>"; };
+		B05356D51CDB396200D31793 /* YBStationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationListViewController.swift; sourceTree = "<group>"; };
+		B0B04ABD1CEC16150006C5F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B0B04AC01CEC16180006C5F3 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
+		B0B04AC41CEC17F10006C5F3 /* BaseSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSplitViewController.swift; sourceTree = "<group>"; };
+		B0B04AC61CEC18A90006C5F3 /* YBSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBSplitViewController.swift; sourceTree = "<group>"; };
+		B0BD4FB51CE2D02B00B77EB5 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		B0F46EF11CD041C800F29FD5 /* YBStationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationTableViewController.swift; sourceTree = "<group>"; };
+		B0F46EF31CD0475200F29FD5 /* YBStationMapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationMapTableViewCell.swift; sourceTree = "<group>"; };
+		B0F46EF41CD0475200F29FD5 /* YBStationMapTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YBStationMapTableViewCell.xib; sourceTree = "<group>"; };
+		B0F6C86D1CD05FBF008C8A5B /* YBRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBRouter.swift; sourceTree = "<group>"; };
+		B0F6C86F1CD0628F008C8A5B /* YBStationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBStationManager.swift; sourceTree = "<group>"; };
+		B0F6C89A1CD1D3B6008C8A5B /* YBTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBTabBarController.swift; sourceTree = "<group>"; };
+		B0F6C89D1CD1DA08008C8A5B /* YBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YBProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B01EDC571CCEF335002D02E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C08918E63962F95DC256CD2 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		621E1264EFE3D774CD69E7FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				070F7461BBB514CE75D23FD1 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B00858EE1CDC74BA00273FBC /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				B00858EF1CDC74C700273FBC /* YBCommentModel.swift */,
+				B00858F11CDC756B00273FBC /* YBCommentModelHelper.swift */,
+				B00858F31CDC7A1600273FBC /* YBCommentTableViewCell.swift */,
+				B00858F41CDC7A1600273FBC /* YBCommentTableViewCell.xib */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		B01EDC511CCEF335002D02E2 = {
+			isa = PBXGroup;
+			children = (
+				B01EDC5C1CCEF335002D02E2 /* YouBike */,
+				B01EDC5B1CCEF335002D02E2 /* Products */,
+				BF10E4F2472B8B84E723BD6D /* Pods */,
+				621E1264EFE3D774CD69E7FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B01EDC5B1CCEF335002D02E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B01EDC5A1CCEF335002D02E2 /* YouBike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B01EDC5C1CCEF335002D02E2 /* YouBike */ = {
+			isa = PBXGroup;
+			children = (
+				B01EDC911CCF3680002D02E2 /* Base */,
+				B00858EE1CDC74BA00273FBC /* Comments */,
+				B03F3B851CD714B100326F73 /* Facebook */,
+				B01EDC711CCEF427002D02E2 /* Navigation */,
+				B01EDC731CCEF427002D02E2 /* Protocols */,
+				B0B04AC31CEC17D50006C5F3 /* Split View */,
+				B01EDC771CCEF427002D02E2 /* Stations */,
+				B0F6C8991CD1D3A3008C8A5B /* Tab Bar */,
+				B0F6C89C1CD1D9F9008C8A5B /* Users */,
+				B01EDC7D1CCEF427002D02E2 /* Utilities */,
+				B01EDC9B1CCF3883002D02E2 /* Maps */,
+				B01EDC5D1CCEF335002D02E2 /* AppDelegate.swift */,
+				B01EDC611CCEF335002D02E2 /* Main_iPhone.storyboard */,
+				B0B04ABE1CEC16150006C5F3 /* Main_iPad.storyboard */,
+				B01EDC641CCEF335002D02E2 /* Assets.xcassets */,
+				B01EDC661CCEF335002D02E2 /* LaunchScreen.storyboard */,
+				B01EDC691CCEF335002D02E2 /* Info.plist */,
+				B01EDC8E1CCEF908002D02E2 /* Localizable.strings */,
+			);
+			path = YouBike;
+			sourceTree = "<group>";
+		};
+		B01EDC711CCEF427002D02E2 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B01EDC721CCEF427002D02E2 /* YBNavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B01EDC731CCEF427002D02E2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B01EDC741CCEF427002D02E2 /* JSONParsable.swift */,
+				B03F3B8F1CD725BB00326F73 /* NSUserDefaultsParsable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B01EDC771CCEF427002D02E2 /* Stations */ = {
+			isa = PBXGroup;
+			children = (
+				B01EDC791CCEF427002D02E2 /* YBStationModel.swift */,
+				B01EDC7A1CCEF427002D02E2 /* YBStationModelHelper.swift */,
+				B0F6C86F1CD0628F008C8A5B /* YBStationManager.swift */,
+				B05356D51CDB396200D31793 /* YBStationListViewController.swift */,
+				B01EDC781CCEF427002D02E2 /* YBStationListTableViewController.swift */,
+				B01EDC7B1CCEF427002D02E2 /* YBStationTableViewCell.swift */,
+				B01EDC7C1CCEF427002D02E2 /* YBStationTableViewCell.xib */,
+				B05356831CD84F1900D31793 /* YBStationViewModeSwitcherView.swift */,
+				B05356C91CDB220600D31793 /* YBStationListCollectionViewController.swift */,
+				B05356D11CDB2D9B00D31793 /* YBStationCollectionViewCell.swift */,
+				B05356D21CDB2D9B00D31793 /* YBStationCollectionViewCell.xib */,
+				B0F46EF11CD041C800F29FD5 /* YBStationTableViewController.swift */,
+				B0F46EF31CD0475200F29FD5 /* YBStationMapTableViewCell.swift */,
+				B0F46EF41CD0475200F29FD5 /* YBStationMapTableViewCell.xib */,
+				B00858E51CDC6E6E00273FBC /* YBStationSectionHeaderView.swift */,
+				B00858E71CDC6E7800273FBC /* YBStationSectionHeaderView.xib */,
+			);
+			path = Stations;
+			sourceTree = "<group>";
+		};
+		B01EDC7D1CCEF427002D02E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B03F3BAF1CD7418C00326F73 /* RHManager.swift */,
+				B03F3BB11CD741E200326F73 /* YBAppManager.swift */,
+				B01EDC7E1CCEF427002D02E2 /* YBColor.swift */,
+				B01EDC7F1CCEF427002D02E2 /* YBJSONHelper.swift */,
+				B0F6C86D1CD05FBF008C8A5B /* YBRouter.swift */,
+				B02EAB701CD35882003D0131 /* YBGlobal.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B01EDC911CCF3680002D02E2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B01EDCA61CCF4EA9002D02E2 /* BaseManager.swift */,
+				B01EDC931CCF3680002D02E2 /* BaseViewController.swift */,
+				B01EDC921CCF3680002D02E2 /* BaseTableViewController.swift */,
+				B05356CB1CDB224800D31793 /* BaseCollectionViewController.swift */,
+				B01EDC961CCF369D002D02E2 /* BaseNavigationController.swift */,
+				B0BD4FB51CE2D02B00B77EB5 /* BaseTabBarController.swift */,
+				B0B04AC41CEC17F10006C5F3 /* BaseSplitViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B01EDC9B1CCF3883002D02E2 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B01EDC9C1CCF3883002D02E2 /* YBStationMapViewController.swift */,
+				B01EDCA01CCF39B8002D02E2 /* YBStationAnnotation.swift */,
+				B01EDC9E1CCF38FB002D02E2 /* YBStationAnnotationView.swift */,
+				B01EDCA41CCF4B2F002D02E2 /* YBLocationManager.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		B03F3B851CD714B100326F73 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				B03F3B881CD714DB00326F73 /* Facebook.swift */,
+				B03F3B861CD714BC00326F73 /* YBFacebook.swift */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		B0B04AC31CEC17D50006C5F3 /* Split View */ = {
+			isa = PBXGroup;
+			children = (
+				B0B04AC61CEC18A90006C5F3 /* YBSplitViewController.swift */,
+			);
+			path = "Split View";
+			sourceTree = "<group>";
+		};
+		B0F6C8991CD1D3A3008C8A5B /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				B0F6C89A1CD1D3B6008C8A5B /* YBTabBarController.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		B0F6C89C1CD1D9F9008C8A5B /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				B0F6C89D1CD1DA08008C8A5B /* YBProfileViewController.swift */,
+				B02EAB6E1CD3558B003D0131 /* YBLogInViewController.swift */,
+				B03F3B831CD7029200326F73 /* YBUserManager.swift */,
+				B03F3B8A1CD720E300326F73 /* YBUserModel.swift */,
+				B03F3B8C1CD7216D00326F73 /* YBUserModelHelper.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		BF10E4F2472B8B84E723BD6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00DA20C6D52B2937B2BA8333 /* Pods.debug.xcconfig */,
+				3AF31640BA2EE91A4774BEFE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B01EDC591CCEF335002D02E2 /* YouBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01EDC6C1CCEF335002D02E2 /* Build configuration list for PBXNativeTarget "YouBike" */;
+			buildPhases = (
+				2A41FDF96418200C42A7B549 /* Check Pods Manifest.lock */,
+				B01EDC561CCEF335002D02E2 /* Sources */,
+				B01EDC571CCEF335002D02E2 /* Frameworks */,
+				B01EDC581CCEF335002D02E2 /* Resources */,
+				B0EF9A81047EA882A26D7707 /* Embed Pods Frameworks */,
+				2C0B74FDD1CDD5F5F2C96F4F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouBike;
+			productName = YouBike;
+			productReference = B01EDC5A1CCEF335002D02E2 /* YouBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B01EDC521CCEF335002D02E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tiny World";
+				TargetAttributes = {
+					B01EDC591CCEF335002D02E2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = B01EDC551CCEF335002D02E2 /* Build configuration list for PBXProject "YouBike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hant",
+			);
+			mainGroup = B01EDC511CCEF335002D02E2;
+			productRefGroup = B01EDC5B1CCEF335002D02E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B01EDC591CCEF335002D02E2 /* YouBike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B01EDC581CCEF335002D02E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01EDC8C1CCEF908002D02E2 /* Localizable.strings in Resources */,
+				B00858F61CDC7A1600273FBC /* YBCommentTableViewCell.xib in Resources */,
+				B01EDC871CCEF427002D02E2 /* YBStationTableViewCell.xib in Resources */,
+				B0F46EF61CD0475300F29FD5 /* YBStationMapTableViewCell.xib in Resources */,
+				B05356D41CDB2D9B00D31793 /* YBStationCollectionViewCell.xib in Resources */,
+				B0B04ABC1CEC16150006C5F3 /* Main_iPad.storyboard in Resources */,
+				B01EDC681CCEF335002D02E2 /* LaunchScreen.storyboard in Resources */,
+				B01EDC651CCEF335002D02E2 /* Assets.xcassets in Resources */,
+				B00858E81CDC6E7800273FBC /* YBStationSectionHeaderView.xib in Resources */,
+				B01EDC631CCEF335002D02E2 /* Main_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A41FDF96418200C42A7B549 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C0B74FDD1CDD5F5F2C96F4F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0EF9A81047EA882A26D7707 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B01EDC561CCEF335002D02E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0BD4FB61CE2D02B00B77EB5 /* BaseTabBarController.swift in Sources */,
+				B01EDC9F1CCF38FB002D02E2 /* YBStationAnnotationView.swift in Sources */,
+				B01EDCA51CCF4B2F002D02E2 /* YBLocationManager.swift in Sources */,
+				B00858F51CDC7A1600273FBC /* YBCommentTableViewCell.swift in Sources */,
+				B0F46EF51CD0475200F29FD5 /* YBStationMapTableViewCell.swift in Sources */,
+				B05356CA1CDB220600D31793 /* YBStationListCollectionViewController.swift in Sources */,
+				B03F3B891CD714DB00326F73 /* Facebook.swift in Sources */,
+				B03F3B871CD714BC00326F73 /* YBFacebook.swift in Sources */,
+				B01EDC801CCEF427002D02E2 /* YBNavigationController.swift in Sources */,
+				B00858E61CDC6E6E00273FBC /* YBStationSectionHeaderView.swift in Sources */,
+				B01EDC861CCEF427002D02E2 /* YBStationTableViewCell.swift in Sources */,
+				B01EDC9D1CCF3883002D02E2 /* YBStationMapViewController.swift in Sources */,
+				B01EDCA71CCF4EA9002D02E2 /* BaseManager.swift in Sources */,
+				B01EDC951CCF3680002D02E2 /* BaseViewController.swift in Sources */,
+				B01EDC941CCF3680002D02E2 /* BaseTableViewController.swift in Sources */,
+				B05356D61CDB396200D31793 /* YBStationListViewController.swift in Sources */,
+				B02EAB6F1CD3558B003D0131 /* YBLogInViewController.swift in Sources */,
+				B03F3B901CD725BB00326F73 /* NSUserDefaultsParsable.swift in Sources */,
+				B0B04AC51CEC17F10006C5F3 /* BaseSplitViewController.swift in Sources */,
+				B0F6C86E1CD05FBF008C8A5B /* YBRouter.swift in Sources */,
+				B02EAB711CD35882003D0131 /* YBGlobal.swift in Sources */,
+				B0F6C89B1CD1D3B6008C8A5B /* YBTabBarController.swift in Sources */,
+				B0B04AC71CEC18A90006C5F3 /* YBSplitViewController.swift in Sources */,
+				B03F3BB21CD741E200326F73 /* YBAppManager.swift in Sources */,
+				B0F6C8701CD0628F008C8A5B /* YBStationManager.swift in Sources */,
+				B00858F21CDC756B00273FBC /* YBCommentModelHelper.swift in Sources */,
+				B01EDC881CCEF427002D02E2 /* YBColor.swift in Sources */,
+				B03F3B841CD7029200326F73 /* YBUserManager.swift in Sources */,
+				B0F46EF21CD041C800F29FD5 /* YBStationTableViewController.swift in Sources */,
+				B05356841CD84F1900D31793 /* YBStationViewModeSwitcherView.swift in Sources */,
+				B03F3B8B1CD720E300326F73 /* YBUserModel.swift in Sources */,
+				B01EDC831CCEF427002D02E2 /* YBStationListTableViewController.swift in Sources */,
+				B01EDC5E1CCEF335002D02E2 /* AppDelegate.swift in Sources */,
+				B01EDCA11CCF39B8002D02E2 /* YBStationAnnotation.swift in Sources */,
+				B05356CC1CDB224800D31793 /* BaseCollectionViewController.swift in Sources */,
+				B00858F01CDC74C700273FBC /* YBCommentModel.swift in Sources */,
+				B01EDC891CCEF427002D02E2 /* YBJSONHelper.swift in Sources */,
+				B01EDC971CCF369D002D02E2 /* BaseNavigationController.swift in Sources */,
+				B03F3B8D1CD7216D00326F73 /* YBUserModelHelper.swift in Sources */,
+				B01EDC841CCEF427002D02E2 /* YBStationModel.swift in Sources */,
+				B01EDC811CCEF427002D02E2 /* JSONParsable.swift in Sources */,
+				B0F6C89E1CD1DA08008C8A5B /* YBProfileViewController.swift in Sources */,
+				B01EDC851CCEF427002D02E2 /* YBStationModelHelper.swift in Sources */,
+				B03F3BB01CD7418C00326F73 /* RHManager.swift in Sources */,
+				B05356D31CDB2D9B00D31793 /* YBStationCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B01EDC611CCEF335002D02E2 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01EDC621CCEF335002D02E2 /* Base */,
+				B01EDC6F1CCEF41A002D02E2 /* zh-Hant */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B01EDC661CCEF335002D02E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01EDC671CCEF335002D02E2 /* Base */,
+				B01EDC701CCEF41A002D02E2 /* zh-Hant */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B01EDC8E1CCEF908002D02E2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B01EDC8D1CCEF908002D02E2 /* Base */,
+				B01EDC8F1CCEF90A002D02E2 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B0B04ABE1CEC16150006C5F3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0B04ABD1CEC16150006C5F3 /* Base */,
+				B0B04AC01CEC16180006C5F3 /* zh-Hant */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B01EDC6A1CCEF335002D02E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B01EDC6B1CCEF335002D02E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B01EDC6D1CCEF335002D02E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DA20C6D52B2937B2BA8333 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YouBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.YouBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B01EDC6E1CCEF335002D02E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF31640BA2EE91A4774BEFE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YouBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.YouBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B01EDC551CCEF335002D02E2 /* Build configuration list for PBXProject "YouBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01EDC6A1CCEF335002D02E2 /* Debug */,
+				B01EDC6B1CCEF335002D02E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01EDC6C1CCEF335002D02E2 /* Build configuration list for PBXNativeTarget "YouBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01EDC6D1CCEF335002D02E2 /* Debug */,
+				B01EDC6E1CCEF335002D02E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B01EDC521CCEF335002D02E2 /* Project object */;
+}

@@ -1,0 +1,11 @@
+platform :ios, "8.0"
+use_frameworks!
+
+pod 'Alamofire', '3.2.1'
+pod 'FBSDKLoginKit', '4.11.0'
+pod 'Hex', '3.0.0'
+pod 'JSONWebToken', '1.5.0'
+pod 'PureLayout', '3.0.1'
+pod 'SDWebImage', '3.7.5'
+pod 'SwiftyJSON', '2.3.2'
+pod 'UIScrollView-InfiniteScroll', '0.7.3'
