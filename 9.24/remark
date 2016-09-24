@@ -1,0 +1,4 @@
+使用了firebase 管理facebook log in
+當user 登入了facebook log in 就會寫入firebase通知
+
+當user 按了 facebook button 就會傳資料
