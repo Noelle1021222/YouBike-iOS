@@ -23,12 +23,14 @@ class ContainerViewController: UIViewController {
     @IBAction func showComponent(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex{
         case 0:
-            UIView.animateWithDuration(0.5, animations:{             self.containerViewList.alpha = 1
+            UIView.animateWithDuration(0.5, animations:{
+                self.containerViewList.alpha = 1
                 self.containerViewGrid.alpha = 0
             })
 
         case 1:
-            UIView.animateWithDuration(0.5, animations:{             self.containerViewList.alpha = 0
+            UIView.animateWithDuration(0.5, animations:{
+                self.containerViewList.alpha = 0
                 self.containerViewGrid.alpha = 1
             })
         default:
